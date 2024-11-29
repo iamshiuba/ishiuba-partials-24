@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --shadow-color: #858585;
+    --shadow-color-dark: #850000;
+    --box-shadow: #ff11117c;
+    --bg-primary: red;
+    --bg-secondary: #fd2600;
+    --hover-color: #9c9c9c44;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    animation: fadeIn 3.5s ease-in;
+}
+
+a {
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.btn, i {
+    text-align: initial;
+    text-decoration: none;
+    transform: scale(1.7);
+    border-radius: 5px;
+    color: var(--bg-primary);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#tos, #privacy {
+    color: var(--text-color);
+    transform: scale(1.0);
+}
+
+#tos:hover, #privacy:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+
+.btn:hover, i:hover {
+    transform: scale(1.1);
+    color: var(--text-color);
+    background-color: var(--hover-color);
+}
+
+.fi {
+    transform: scale(1.5);
+    margin: 0.5rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.fi:hover {
+    transform: scale(1.1);
+}
+
+.container, .container-fluid {
+    display: flex;
+    background-color: transparent;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 1rem;
+}
+
